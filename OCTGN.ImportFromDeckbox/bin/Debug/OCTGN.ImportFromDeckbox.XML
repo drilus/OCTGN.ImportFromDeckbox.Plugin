@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OCTGN.ImportFromDeckbox</name>
+    </assembly>
+    <members>
+        <member name="T:OCTGN.ImportFromDeckbox.AboutBox">
+            <summary>
+            The about box
+            </summary>
+            <summary>
+            AboutBox
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.AboutBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OCTGN.ImportFromDeckbox.AboutBox"/> class.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.AboutBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AboutBox.Description">
+            <summary>
+            Gets the description.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AboutBox.CustomTitle">
+            <summary>
+            Gets the custom title.
+            </summary>
+            <value>
+            The custom title.
+            </value>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.AssemblyInfo">
+            <summary>
+            freeware helper class for getting .NET assembly info
+            (W) 2011 by admin of codezentrale.6x.to
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AssemblyInfo.AssemblyTitle">
+            <summary>
+            get assembly title
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AssemblyInfo.AssemblyVersion">
+            <summary>
+            get assembly version
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AssemblyInfo.AssemblyDescription">
+            <summary>
+            get assembly description
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AssemblyInfo.AssemblyProduct">
+            <summary>
+            get assembly product
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AssemblyInfo.AssemblyCopyright">
+            <summary>
+            get assembly copyright
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AssemblyInfo.AssemblyCompany">
+            <summary>
+            get assembly company
+            </summary>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin">
+            <summary>
+            The import from Deckbox.org plugin
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin.OnLoad(Octgn.Data.GamesRepository)">
+            <summary>
+            Happens when the Deck Editor is opened.
+            </summary>
+            <param name="games">Game repository.</param>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin.MenuItems">
+            <summary>
+            Menu items to add for the plugin.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin.Id">
+            <summary>
+            Plugin ID
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin.Name">
+            <summary>
+            Name of the plugin
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin.Version">
+            <summary>
+            Version of the plugin.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.ImportDeckFromDeckboxPlugin.RequiredByOctgnVersion">
+            <summary>
+            Required minimum version of OCTGN for this plugin.
+            </summary>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.PluginMenuItem">
+            <summary>
+            The plugin menu item
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.PluginMenuItem.OnClick(Octgn.Library.Plugin.IDeckBuilderPluginController)">
+            <summary>
+            This happens when the menu item is clicked.
+            </summary>
+            <param name="pluginController"></param>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.PluginMenuItem.Name">
+            <summary>
+            Name to display for the menu item.
+            </summary>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.Localization">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxAuthor">
+            <summary>
+              Looks up a localized string similar to This plugin was written by Michael Wagner. Use the OCTGN foum to report issues and feature requests..
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxLicence">
+             <summary>
+               Looks up a localized string similar to Non-Profit Open Software License 3.0 (NPOSL-3.0)
+            
+            This Non-Profit Open Software License (“Non-Profit OSL”) version 3.0 (the “License”) applies to any original work of authorship (the “Original Work”) whose owner (the “Licensor”) has placed the following licensing notice adjacent to the copyright notice for the Original Work:
+            
+            Licensed under the Non-Profit Open Software License version 3.0
+            
+            1) Grant of Copyright License. Licensor grants You a worldwide, royalty-free, non-exclusive, sublicensable licens [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxLicenceHeader">
+            <summary>
+              Looks up a localized string similar to This plugin is published under the NPOSL-3.0:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxTitle">
+            <summary>
+              Looks up a localized string similar to About Deckbox Import Plugin.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.BusyText">
+            <summary>
+              Looks up a localized string similar to Calculating Important Stuff....
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ButtonAbout">
+            <summary>
+              Looks up a localized string similar to About....
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ButtonClose">
+            <summary>
+              Looks up a localized string similar to Close.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ButtonParseAndSave">
+            <summary>
+              Looks up a localized string similar to Parse and Save Deck.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.CopyForum">
+            <summary>
+              Looks up a localized string similar to Copy Deck 4 Forum.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ErrorCannotFindCards">
+            <summary>
+              Looks up a localized string similar to Cannot find cards:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ErrorHintParseError">
+            <summary>
+              Looks up a localized string similar to Error parsing text content..
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ExplenationParse">
+             <summary>
+               Looks up a localized string similar to 1. Create your deck list on deckbox.org.
+            2. Click on View-&gt;Print to display the print version of your deck.
+            3. Copy the complete text of this print view into the text field below..
+             </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ExplenationSave">
+             <summary>
+               Looks up a localized string similar to 1. Save your deck to disc.
+            2. You can now load this deck into OCTGN.
+            3. IMPORTANT: You need to add the capital in the OCTGN deck builder before the deck can be used..
+             </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.GroupBoxHeaderDeckbox">
+            <summary>
+              Looks up a localized string similar to Paste Deckbox Deck List.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.LabelCapital">
+            <summary>
+              Looks up a localized string similar to Capital:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.LoadedCards">
+            <summary>
+              Looks up a localized string similar to Loaded Cards:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.MatchedCards">
+            <summary>
+              Looks up a localized string similar to Matched Cards:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ParsedCards">
+            <summary>
+              Looks up a localized string similar to Parsed Cards:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ParseErrorGeneral">
+            <summary>
+              Looks up a localized string similar to General parse error: Cannot find any cards..
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ParseErrorLineMismatch">
+            <summary>
+              Looks up a localized string similar to Parsing mismatch: Found {0} card count values but {1} card names..
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.PluginMenuItem">
+            <summary>
+              Looks up a localized string similar to Import from Deckbox.org.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.PluginName">
+            <summary>
+              Looks up a localized string similar to Import Deck from Deckbox.org Plugin.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.SelectGame">
+            <summary>
+              Looks up a localized string similar to Select Game.
+            </summary>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.MainViewModel">
+            <summary>
+            The main view model.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.#ctor(Octgn.Library.Plugin.IDeckBuilderPluginController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OCTGN.ImportFromDeckbox.MainViewModel"/> class.
+            </summary>
+            <param name="pluginController">The plugin controller.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.CopyToForum">
+            <summary>
+            Copies to forum.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.FirePropertyChanged(System.String)">
+            <summary>
+            Fires the property changed.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.ParseCardsFromText">
+            <summary>
+            Parses the cards from text.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.ReadCards">
+            <summary>
+            Reads all available cards from OCTGN.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.SaveDeck">
+            <summary>
+            Saves the deck.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.UpdateCapitals">
+            <summary>
+            Updates the capitals.
+            </summary>
+        </member>
+        <member name="E:OCTGN.ImportFromDeckbox.MainViewModel.PropertyChanged">
+            <summary>
+            Occurs when a property has changed.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.CardCount">
+            <summary>
+            Gets the card count.
+            </summary>
+            <value>
+            The card count.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.Cards">
+            <summary>
+            Gets the cards.
+            </summary>
+            <value>
+            The cards.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.HasError">
+            <summary>
+            Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.ErrorDetails">
+            <summary>
+            Gets or sets the error details.
+            </summary>
+            <value>
+            The error details.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.ErrorHint">
+            <summary>
+            Gets or sets the error hint.
+            </summary>
+            <value>
+            The error hint.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.GameDefinitions">
+            <summary>
+            Gets the game definitions.
+            </summary>
+            <value>
+            The game definitions.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.IsBusy">
+            <summary>
+            Gets or sets a value indicating whether this instance is busy.
+            </summary>
+            <value>
+              <c>true</c> if this instance is busy; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.IsWarhammerInvasion">
+            <summary>
+            Gets a value indicating whether the current loaded game is warhammer invasion.
+            </summary>
+            <value>
+            <c>true</c> if the current loaded game is warhammer invasion; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.AllCardsOfSelectedGame">
+            <summary>
+            Gets all cards of selected game.
+            </summary>
+            <value>
+            All cards of selected game.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.MatchedCards">
+            <summary>
+            Gets the matched cards.
+            </summary>
+            <value>
+            The matched cards.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.MatchedCardSummary">
+            <summary>
+            Gets the matched card summary.
+            </summary>
+            <value>
+            The matched card summary.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.ParsedCardCount">
+            <summary>
+            Gets the parsed card count.
+            </summary>
+            <value>
+            The parsed card count.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.ParsedCards">
+            <summary>
+            Gets the parsed cards.
+            </summary>
+            <value>
+            The parsed cards.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.PluginController">
+            <summary>
+            Gets the plugin controller.
+            </summary>
+            <value>
+            The plugin controller.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.SelectedGame">
+            <summary>
+            Gets or sets the selected game.
+            </summary>
+            <value>
+            The selected game.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.SelectedWarhammerInvasionCapital">
+            <summary>
+            Gets or sets the selected warhammer invasion capital.
+            </summary>
+            <value>
+            The selected warhammer invasion capital.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.TextToParse">
+            <summary>
+            Gets or sets the text to parse.
+            </summary>
+            <value>
+            The text to parse.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainViewModel.WarhammerInvasionCapitals">
+            <summary>
+            Gets the warhammer invasion capitals.
+            </summary>
+            <value>
+            The warhammer invasion capitals.
+            </value>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.#ctor(OCTGN.ImportFromDeckbox.MainViewModel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OCTGN.ImportFromDeckbox.MainWindow"/> class.
+            </summary>
+            <param name="viewModel">The view model.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.OnAboutClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the about button was clicked.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.OnCopyToForum(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the copy to forum button was clicked.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.OnLoadCards(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the cards are loaded.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.OnParseAndSave(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the deck shall be saved.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.MainWindow.ViewModel">
+            <summary>
+            Gets the view model.
+            </summary>
+            <value>
+            The view model.
+            </value>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.OCTGN.CardData">
+            <summary>
+            This class contains the card data read from the SQLite database.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.OCTGN.CardData.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.OCTGN.CardData.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+            <value>
+            The id.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.OCTGN.CardData.Count">
+            <summary>
+            Gets or sets the count.
+            </summary>
+            <value>
+            The count.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.OCTGN.CardData.GameId">
+            <summary>
+            Gets or sets the game id.
+            </summary>
+            <value>
+            The game id.
+            </value>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ExtractCards">
+            <summary>
+            Extracts cards from the regex matched cards for the new deck.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.ExtractCards.MatchCards(Octgn.Data.Game,System.Collections.Generic.IEnumerable{Octgn.Data.CardModel},System.Collections.Generic.IEnumerable{OCTGN.ImportFromDeckbox.OCTGN.CardData},System.Collections.Generic.IEnumerable{OCTGN.ImportFromDeckbox.OCTGN.CardData})">
+            <summary>
+            Matches the cards.
+            </summary>
+            <param name="octgnGame">The octgn game.</param>
+            <param name="cardModels">The card models.</param>
+            <param name="octgnCards">The octgn cards.</param>
+            <param name="parsedCards">The parsed cards.</param>
+            <returns>A collectoin of matched cards.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            This exception will be thrown when cards cannot be matched.
+            </exception>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.OCTGN.GameExtension">
+            <summary>
+            Extends the <see cref="T:Octgn.Data.Game"/> class.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.GameExtension.IsWarhammerInvasion(Octgn.Data.Game)">
+            <summary>
+            Determines whether the given game is warhammer invasion.
+            </summary>
+            <param name="instanceToExtend">The instance to extend.</param>
+            <returns>
+              <c>true</c> if the given game is warhammer invasion; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ParseCards">
+            <summary>
+            Parses the cards from plain text.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.ParseCards.Parse(System.String)">
+            <summary>
+            Parses the specified card text.
+            </summary>
+            <param name="inputText">The input text.</param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException">
+            This exception will be thrown when the input text couldn't be matched.
+            </exception>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ReadCardData">
+            <summary>
+            Reads card data from the SQLite database.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.ReadCardData.Read(System.String,System.Collections.Generic.IEnumerable{Octgn.Data.CardModel})">
+            <summary>
+            Reads the specified card models.
+            </summary>
+            <param name="gameId">The game id.</param>
+            <param name="cardModels">The card models.</param>
+            <returns></returns>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.RegularExpressions">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.RegularExpressions.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.RegularExpressions.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.RegularExpressions.AnalyzeCards">
+             <summary>
+               Looks up a localized string similar to (?:
+               (?&lt;Number&gt; \d+ )
+               (?&lt;Card&gt; [^\r\n]+ )
+               (?: [\r\n]* )
+            )+.
+             </summary>
+        </member>
+    </members>
+</doc>
