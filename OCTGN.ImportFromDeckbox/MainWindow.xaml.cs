@@ -94,5 +94,15 @@ namespace OCTGN.ImportFromDeckbox
                     string.Empty);
             }
         }
+
+        /// <summary>
+        /// Called when we shall paste from clipboard.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
+        private void OnPasteFromClipboard(object sender, RoutedEventArgs e)
+        {
+            ViewModel.PasteFromClipboard();
+        }
     }
 }

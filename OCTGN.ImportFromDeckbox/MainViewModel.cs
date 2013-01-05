@@ -411,6 +411,18 @@ namespace OCTGN.ImportFromDeckbox
         }
 
         /// <summary>
+        /// Pastes from clipboard.
+        /// </summary>
+        public void PasteFromClipboard()
+        {
+            var clipboard = Clipboard.GetText();
+            if (!string.IsNullOrEmpty(clipboard))
+            {
+                TextToParse = clipboard;
+            }
+        }
+
+        /// <summary>
         /// Updates the capitals.
         /// </summary>
         private void UpdateCapitals()

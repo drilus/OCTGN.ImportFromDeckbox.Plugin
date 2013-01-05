@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Dropbox\Testprojekte\OCTGN\OCTGN\Plugins\OCTGN.ImportFromDeckbox\obj\Release\
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\obj\Release\
 OCTGN.ImportFromDeckbox
 none
 false
@@ -12,8 +12,8 @@ TRACE
 
 2-1129941408
 
-14869920382
-18-565430503
+15-1273856998
+181783847464
 AboutBox.xaml;MainWindow.xaml;
 
 False

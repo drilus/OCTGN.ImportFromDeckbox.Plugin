@@ -257,4 +257,7 @@ e) to display the Original Work publicly.
   <data name="AboutboxVersionHeaderVersion" xml:space="preserve">
     <value>Version number</value>
   </data>
+  <data name="ButtonPaste" xml:space="preserve">
+    <value>Paste Deckbox.org Deck from Clipboard</value>
+  </data>
 </root>

@@ -211,6 +211,11 @@
               Looks up a localized string similar to Parse and Save Deck.
             </summary>
         </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ButtonPaste">
+            <summary>
+              Looks up a localized string similar to Paste Deckbox.org Deck from Clipboard.
+            </summary>
+        </member>
         <member name="P:OCTGN.ImportFromDeckbox.Localization.CopyForum">
             <summary>
               Looks up a localized string similar to Copy Deck 4 Forum.
@@ -325,6 +330,11 @@
         <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.SaveDeck">
             <summary>
             Saves the deck.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.PasteFromClipboard">
+            <summary>
+            Pastes from clipboard.
             </summary>
         </member>
         <member name="M:OCTGN.ImportFromDeckbox.MainViewModel.UpdateCapitals">
@@ -519,6 +529,13 @@
         <member name="M:OCTGN.ImportFromDeckbox.MainWindow.OnParseAndSave(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
             Called when the deck shall be saved.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.MainWindow.OnPasteFromClipboard(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when we shall paste from clipboard.
             </summary>
             <param name="sender">The sender.</param>
             <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>

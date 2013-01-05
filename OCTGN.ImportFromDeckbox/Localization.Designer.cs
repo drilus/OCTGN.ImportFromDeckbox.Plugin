@@ -166,6 +166,15 @@ namespace OCTGN.ImportFromDeckbox {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paste Deckbox.org Deck from Clipboard.
+        /// </summary>
+        public static string ButtonPaste {
+            get {
+                return ResourceManager.GetString("ButtonPaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy Deck 4 Forum.
         /// </summary>
         public static string CopyForum {
