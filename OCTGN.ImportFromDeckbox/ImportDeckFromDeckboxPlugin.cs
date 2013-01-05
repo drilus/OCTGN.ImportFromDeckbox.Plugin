@@ -32,8 +32,7 @@ namespace OCTGN.ImportFromDeckbox
         /// <param name="games">Game repository.</param>
         public void OnLoad(GamesRepository games)
         {
-            // I'm showing a message box, but don't do this, unless it's for updates or something...but don't do it every time as it pisses people off.
-            // MessageBox.Show("Hello!");
+            // Nothing special to handle here
         }
 
         /// <summary>
@@ -80,8 +79,7 @@ namespace OCTGN.ImportFromDeckbox
         {
             get
             {
-                // Don't allow this plugin to be used in any version less than 3.0.1.26
-                return Version.Parse("3.0.1.26");
+                return Version.Parse("3.0.1.27");
             }
         }
     }

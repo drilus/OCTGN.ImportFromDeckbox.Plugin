@@ -248,4 +248,13 @@ e) to display the Original Work publicly.
   <data name="SelectGame" xml:space="preserve">
     <value>Select Game</value>
   </data>
+  <data name="AboutboxHeader" xml:space="preserve">
+    <value>Version History</value>
+  </data>
+  <data name="AboutboxVersionHeaderDetails" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="AboutboxVersionHeaderVersion" xml:space="preserve">
+    <value>Version number</value>
+  </data>
 </root>

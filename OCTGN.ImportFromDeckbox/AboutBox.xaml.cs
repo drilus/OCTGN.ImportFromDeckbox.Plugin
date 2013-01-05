@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace OCTGN.ImportFromDeckbox
 {
@@ -26,8 +15,21 @@ namespace OCTGN.ImportFromDeckbox
         {
             InitializeComponent();
 
+            // TODO MW 05.01.2013: Read version info from embedded xml
+            var collection = new List<VersionDetails>();
+            collection.Add(new VersionDetails() { Version = "1.0.0.0", Details = "Initial release." });
+            VersionDetailCollection = collection;
+
             DataContext = this;
         }
+
+        /// <summary>
+        /// Gets or sets the version detail collection.
+        /// </summary>
+        /// <value>
+        /// The version detail collection.
+        /// </value>
+        public IEnumerable<VersionDetails> VersionDetailCollection { get; set; }
 
         /// <summary>
         /// Gets the description.

@@ -22,6 +22,14 @@
             InitializeComponent
             </summary>
         </member>
+        <member name="P:OCTGN.ImportFromDeckbox.AboutBox.VersionDetailCollection">
+            <summary>
+            Gets or sets the version detail collection.
+            </summary>
+            <value>
+            The version detail collection.
+            </value>
+        </member>
         <member name="P:OCTGN.ImportFromDeckbox.AboutBox.Description">
             <summary>
             Gets the description.
@@ -147,6 +155,11 @@
               Looks up a localized string similar to This plugin was written by Michael Wagner. Use the OCTGN foum to report issues and feature requests..
             </summary>
         </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxHeader">
+            <summary>
+              Looks up a localized string similar to Version History.
+            </summary>
+        </member>
         <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxLicence">
              <summary>
                Looks up a localized string similar to Non-Profit Open Software License 3.0 (NPOSL-3.0)
@@ -166,6 +179,16 @@
         <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxTitle">
             <summary>
               Looks up a localized string similar to About Deckbox Import Plugin.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxVersionHeaderDetails">
+            <summary>
+              Looks up a localized string similar to Details.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.AboutboxVersionHeaderVersion">
+            <summary>
+              Looks up a localized string similar to Version number.
             </summary>
         </member>
         <member name="P:OCTGN.ImportFromDeckbox.Localization.BusyText">
@@ -634,6 +657,27 @@
                (?: [\r\n]* )
             )+.
              </summary>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.VersionDetails">
+            <summary>
+            This class contains a single version info.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.VersionDetails.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+            <value>
+            The version.
+            </value>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.VersionDetails.Details">
+            <summary>
+            Gets or sets the details.
+            </summary>
+            <value>
+            The details.
+            </value>
         </member>
     </members>
 </doc>

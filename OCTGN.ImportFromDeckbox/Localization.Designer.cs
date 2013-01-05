@@ -70,6 +70,15 @@ namespace OCTGN.ImportFromDeckbox {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Version History.
+        /// </summary>
+        public static string AboutboxHeader {
+            get {
+                return ResourceManager.GetString("AboutboxHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Non-Profit Open Software License 3.0 (NPOSL-3.0)
         ///
         ///This Non-Profit Open Software License (“Non-Profit OSL”) version 3.0 (the “License”) applies to any original work of authorship (the “Original Work”) whose owner (the “Licensor”) has placed the following licensing notice adjacent to the copyright notice for the Original Work:
@@ -99,6 +108,24 @@ namespace OCTGN.ImportFromDeckbox {
         public static string AboutboxTitle {
             get {
                 return ResourceManager.GetString("AboutboxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Details.
+        /// </summary>
+        public static string AboutboxVersionHeaderDetails {
+            get {
+                return ResourceManager.GetString("AboutboxVersionHeaderDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version number.
+        /// </summary>
+        public static string AboutboxVersionHeaderVersion {
+            get {
+                return ResourceManager.GetString("AboutboxVersionHeaderVersion", resourceCulture);
             }
         }
         

@@ -89,6 +89,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RegularExpressions.resx</DependentUpon>
     </Compile>
+    <Compile Include="VersionDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization.resx">
