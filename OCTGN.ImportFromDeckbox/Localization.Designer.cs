@@ -204,22 +204,12 @@ namespace OCTGN.ImportFromDeckbox {
         /// <summary>
         ///   Looks up a localized string similar to 1. Create your deck list on deckbox.org.
         ///2. Click on View-&gt;Print to display the print version of your deck.
-        ///3. Copy the complete text of this print view into the text field below..
+        ///3. Copy the complete text of this print view into the text field below.
+        ///4. The found cards will be displayed in the list below on the right side..
         /// </summary>
         public static string ExplenationParse {
             get {
                 return ResourceManager.GetString("ExplenationParse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 1. Save your deck to disc.
-        ///2. You can now load this deck into OCTGN.
-        ///3. IMPORTANT: You need to add the capital in the OCTGN deck builder before the deck can be used..
-        /// </summary>
-        public static string ExplenationSave {
-            get {
-                return ResourceManager.GetString("ExplenationSave", resourceCulture);
             }
         }
         

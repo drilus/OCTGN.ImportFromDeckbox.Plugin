@@ -360,7 +360,8 @@ namespace OCTGN.ImportFromDeckbox
                 FirePropertyChanged("HasError");
                 FirePropertyChanged("ErrorDetails");
                 FirePropertyChanged("MatchedCardSummary");
-            }
+                FirePropertyChanged("MatchedCards");
+           }
         }
 
         /// <summary>
