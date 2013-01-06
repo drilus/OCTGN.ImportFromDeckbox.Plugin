@@ -590,6 +590,14 @@
             The game id.
             </value>
         </member>
+        <member name="P:OCTGN.ImportFromDeckbox.OCTGN.CardData.CardType">
+            <summary>
+            Gets or sets the card type.
+            </summary>
+            <value>
+            The card type.
+            </value>
+        </member>
         <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ExtractCards">
             <summary>
             Extracts cards from the regex matched cards for the new deck.
@@ -627,15 +635,14 @@
             Parses the cards from plain text.
             </summary>
         </member>
-        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.ParseCards.Parse(System.String)">
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.ParseCards.Parse(System.String,System.Collections.Generic.IEnumerable{OCTGN.ImportFromDeckbox.OCTGN.CardData})">
             <summary>
             Parses the specified card text.
             </summary>
             <param name="inputText">The input text.</param>
+            <param name="allCards">All cards.</param>
             <returns></returns>
-            <exception cref="T:System.InvalidOperationException">
-            This exception will be thrown when the input text couldn't be matched.
-            </exception>
+            <exception cref="T:System.InvalidOperationException">This exception will be thrown when the input text couldn't be matched.</exception>
         </member>
         <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ReadCardData">
             <summary>
@@ -670,6 +677,7 @@
              <summary>
                Looks up a localized string similar to (?:
                (?&lt;Number&gt; \d+ )
+               (?: \s* )
                (?&lt;Card&gt; [^\r\n]+ )
                (?: [\r\n]* )
             )+.

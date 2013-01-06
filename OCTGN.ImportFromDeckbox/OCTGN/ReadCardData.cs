@@ -1,5 +1,6 @@
 ﻿using Octgn.Data;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace OCTGN.ImportFromDeckbox.OCTGN
 {
@@ -20,20 +21,22 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
         {
             var result = new List<CardData>();
 
-            
             foreach (var item in cardModels)
             {
+                var type = item.Properties.Where(p => p.Key.Equals("Type")).FirstOrDefault();
+
                 var card = new CardData()
                 {
                     Id = item.Id.ToString(),
                     Name = item.Name,
                     GameId = gameId,
+                    CardType = !string.IsNullOrEmpty(type.Key) ? type.Value.ToString() : string.Empty,
                 };
 
                 result.Add(card);
             }
 
-            return result;
+            return result.OrderBy(c => c.CardType).ThenBy(c => c.Name).ToList();
         }
     }
 }

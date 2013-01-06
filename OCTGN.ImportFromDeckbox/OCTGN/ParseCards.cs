@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace OCTGN.ImportFromDeckbox.OCTGN
@@ -14,11 +15,12 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
         /// Parses the specified card text.
         /// </summary>
         /// <param name="inputText">The input text.</param>
+        /// <param name="allCards">All cards.</param>
         /// <returns></returns>
-        /// <exception cref="System.InvalidOperationException">
-        /// This exception will be thrown when the input text couldn't be matched.
-        /// </exception>
-        public static IEnumerable<CardData> Parse(string inputText)
+        /// <exception cref="System.InvalidOperationException">This exception will be thrown when the input text couldn't be matched.</exception>
+        public static IEnumerable<CardData> Parse(
+            string inputText,
+            IEnumerable<CardData> allCards)
         {
             var result = new List<CardData>();
 
@@ -55,14 +57,20 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
             {
                 var card = new CardData()
                 {
-                    Name = cardGroups[index].Value.ToString(),
+                    Name = cardGroups[index].Value.ToString().Trim(),
                     Count = Convert.ToInt32(numberGroups[index].Value, CultureInfo.InvariantCulture),
                 };
+
+                var found = allCards.Where(c => c.Name.Equals(card.Name)).FirstOrDefault();
+                if (found != null)
+                {
+                    card.CardType = found.CardType;
+                }
 
                 result.Add(card);
             }
 
-            return result;
+            return result.OrderBy(c => c.CardType).ThenBy(c => c.Name).ToList();
         }
     }
 }

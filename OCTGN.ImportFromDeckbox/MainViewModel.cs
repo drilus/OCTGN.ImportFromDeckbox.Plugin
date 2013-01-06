@@ -340,7 +340,7 @@ namespace OCTGN.ImportFromDeckbox
                 ErrorDetails = string.Empty;
                 ErrorHint = string.Empty;
 
-                ParsedCards = ParseCards.Parse(TextToParse);
+                ParsedCards = ParseCards.Parse(TextToParse, Cards);
                 MatchedCards = ExtractCards.MatchCards(
                     SelectedGame,
                     AllCardsOfSelectedGame,

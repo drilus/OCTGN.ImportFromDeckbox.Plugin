@@ -36,5 +36,13 @@
         /// The game id.
         /// </value>
         public string GameId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the card type.
+        /// </summary>
+        /// <value>
+        /// The card type.
+        /// </value>
+        public string CardType { get; set; }
     }
 }

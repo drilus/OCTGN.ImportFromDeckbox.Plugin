@@ -120,6 +120,7 @@
   <data name="AnalyzeCards" xml:space="preserve">
     <value>(?:
    (?&lt;Number&gt; \d+ )
+   (?: \s* )
    (?&lt;Card&gt; [^\r\n]+ )
    (?: [\r\n]* )
 )+</value>

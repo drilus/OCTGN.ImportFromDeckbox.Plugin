@@ -63,6 +63,7 @@ namespace OCTGN.ImportFromDeckbox {
         /// <summary>
         ///   Looks up a localized string similar to (?:
         ///   (?&lt;Number&gt; \d+ )
+        ///   (?: \s* )
         ///   (?&lt;Card&gt; [^\r\n]+ )
         ///   (?: [\r\n]* )
         ///)+.
