@@ -32,3 +32,13 @@ D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDec
 D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\obj\Release\Octgn.ImportFromDeckbox.csproj.GenerateResource.Cache
 D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\obj\Release\OCTGN.ImportFromDeckbox.dll
 D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\obj\Release\OCTGN.ImportFromDeckbox.pdb
+D:\Dropbox\Testprojekte\OCTGN\octgnFX\Octgn\bin\Release\Plugins\de\OCTGN.ImportFromDeckbox.resources.dll
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\obj\Release\OCTGN.ImportFromDeckbox.Localization.de.resources
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\obj\Release\de\OCTGN.ImportFromDeckbox.resources.dll
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\OCTGN.ImportFromDeckbox.dll.config
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\OCTGN.ImportFromDeckbox.XML
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\OCTGN.ImportFromDeckbox.dll
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\OCTGN.ImportFromDeckbox.pdb
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\de\OCTGN.ImportFromDeckbox.resources.dll
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\Octgn.Data.dll
+D:\Dropbox\Testprojekte\OCTGN\OCTGN.ImportFromDeckbox.Plugin\OCTGN.ImportFromDeckbox\bin\Release\Octgn.Library.dll
