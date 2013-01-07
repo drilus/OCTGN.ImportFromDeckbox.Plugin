@@ -23,14 +23,12 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
 
             foreach (var item in cardModels)
             {
-                var type = item.Properties.Where(p => p.Key.Equals("Type")).FirstOrDefault();
-
                 var card = new CardData()
                 {
                     Id = item.Id.ToString(),
                     Name = item.Name,
                     GameId = gameId,
-                    CardType = !string.IsNullOrEmpty(type.Key) ? type.Value.ToString() : string.Empty,
+                    CardType = item.GetCardType(),
                 };
 
                 result.Add(card);

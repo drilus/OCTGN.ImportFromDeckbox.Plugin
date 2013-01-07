@@ -160,7 +160,7 @@ namespace OCTGN.ImportFromDeckbox
 
                     var matchedSummary = string.Format(
                         CultureInfo.InvariantCulture,
-                        "{0} ({1} Distinct)",
+                        Localization.MatchedCardSummary,
                         quantity,
                         MatchedCards.Count());
 
@@ -303,17 +303,52 @@ namespace OCTGN.ImportFromDeckbox
         {
             var forum = new StringBuilder();
 
-            foreach (var matched in MatchedCards)
+            var gameId = "wow";
+            if (_selectedGame.IsWarhammerInvasion())
             {
-                var link = string.Format(
-                    CultureInfo.InvariantCulture,
-                    "{0} [url=http://deckbox.org/whi/{1}]{2}[/url]",
-                    matched.Quantity,
-                    HttpUtility.UrlEncode(matched.Card.Name),
-                    matched.Card.Name);
-
-                forum.AppendLine(link);
+                gameId = "whi";
             }
+            else if (_selectedGame.IsMagic())
+            {
+                gameId = "mtg";
+            }
+
+            var types = MatchedCards.Select(c => c.Card.GetCardType()).Distinct().OrderBy(t => t);
+            foreach (var cardType in types)
+            {
+                var cards = MatchedCards
+                    .Where(c => c.Card.HasCardType(cardType))
+                    .OrderBy(c => c.Card.Name)
+                    .ToArray();
+
+                if (!string.IsNullOrEmpty(cardType))
+                {
+                    forum.AppendLine();
+                    forum.AppendFormat(
+                        CultureInfo.InvariantCulture,
+                        "[b]{0}[/b]",
+                        cardType);
+
+                    forum.AppendLine();
+                }
+
+                foreach (var matched in cards)
+                {
+                    var link = string.Format(
+                        CultureInfo.InvariantCulture,
+                        "{0} [url=http://deckbox.org/{3}/{1}]{2}[/url]",
+                        matched.Quantity,
+                        HttpUtility.UrlEncode(matched.Card.Name),
+                        matched.Card.Name,
+                        gameId);
+
+                    forum.AppendLine(link);
+                }
+            }
+
+            forum.AppendLine();
+            forum.Append(Localization.ForumDeckSummary);
+            forum.AppendLine(MatchedCardSummary);
 
             Clipboard.SetText(forum.ToString());
         }

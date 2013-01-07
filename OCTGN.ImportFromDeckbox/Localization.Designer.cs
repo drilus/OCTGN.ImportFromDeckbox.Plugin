@@ -214,6 +214,15 @@ namespace OCTGN.ImportFromDeckbox {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [b]Deck summary: [/b].
+        /// </summary>
+        public static string ForumDeckSummary {
+            get {
+                return ResourceManager.GetString("ForumDeckSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Paste Deckbox Deck List.
         /// </summary>
         public static string GroupBoxHeaderDeckbox {
@@ -246,6 +255,15 @@ namespace OCTGN.ImportFromDeckbox {
         public static string MatchedCards {
             get {
                 return ResourceManager.GetString("MatchedCards", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Cards ({1} Distinct).
+        /// </summary>
+        public static string MatchedCardSummary {
+            get {
+                return ResourceManager.GetString("MatchedCardSummary", resourceCulture);
             }
         }
         

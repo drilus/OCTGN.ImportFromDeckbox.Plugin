@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Windows;
+using OCTGN.ImportFromDeckbox.Util;
 
 namespace OCTGN.ImportFromDeckbox
 {
@@ -15,10 +18,7 @@ namespace OCTGN.ImportFromDeckbox
         {
             InitializeComponent();
 
-            // TODO MW 05.01.2013: Read version info from embedded xml
-            var collection = new List<VersionDetails>();
-            collection.Add(new VersionDetails() { Version = "1.0.0.0", Details = "Initial release." });
-            VersionDetailCollection = collection;
+            LoadVersionInformation();
 
             DataContext = this;
         }
@@ -57,6 +57,21 @@ namespace OCTGN.ImportFromDeckbox
             {
                 return Localization.AboutboxTitle + " - " + AssemblyInfo.AssemblyVersion;
             }
+        }
+
+        /// <summary>
+        /// Loads the version information.
+        /// </summary>
+        public void LoadVersionInformation()
+        {
+            var document = EmbeddedResourceHelper.ReadEmbeddedResourceXDocument("VersionHistory.xml", Assembly.GetExecutingAssembly());
+
+            var elements = document.Root.Elements("Version");
+            VersionDetailCollection = elements.Select(e => new VersionDetails()
+                                                               {
+                                                                   Version = e.Attribute("Number").Value,
+                                                                   Details = e.Value,
+                                                               }).ToList();
         }
     }
 }

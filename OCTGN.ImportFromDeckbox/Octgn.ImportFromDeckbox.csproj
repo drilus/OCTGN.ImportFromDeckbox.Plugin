@@ -28,10 +28,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\octgnFX\Octgn\bin\Release\Plugins\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\OCTGN.ImportFromDeckbox.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Octgn.Data, Version=3.0.1.27, Culture=neutral, processorArchitecture=MSIL">
@@ -74,6 +75,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="OCTGN\CardData.cs" />
+    <Compile Include="OCTGN\CardModelExtension.cs" />
     <Compile Include="OCTGN\ExtractCards.cs" />
     <Compile Include="OCTGN\GameExtension.cs" />
     <Compile Include="OCTGN\ParseCards.cs" />
@@ -89,9 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RegularExpressions.resx</DependentUpon>
     </Compile>
+    <Compile Include="Util\EmbeddedResourceHelper.cs" />
     <Compile Include="VersionDetails.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Localization.de.resx" />
     <EmbeddedResource Include="Localization.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Localization.Designer.cs</LastGenOutput>

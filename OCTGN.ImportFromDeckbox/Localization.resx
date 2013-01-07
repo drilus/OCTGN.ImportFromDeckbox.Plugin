@@ -256,4 +256,10 @@ e) to display the Original Work publicly.
   <data name="ButtonPaste" xml:space="preserve">
     <value>Paste Deckbox.org Deck from Clipboard</value>
   </data>
+  <data name="ForumDeckSummary" xml:space="preserve">
+    <value>[b]Deck summary: [/b]</value>
+  </data>
+  <data name="MatchedCardSummary" xml:space="preserve">
+    <value>{0} Cards ({1} Distinct)</value>
+  </data>
 </root>

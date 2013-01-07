@@ -17,6 +17,11 @@
             Initializes a new instance of the <see cref="T:OCTGN.ImportFromDeckbox.AboutBox"/> class.
             </summary>
         </member>
+        <member name="M:OCTGN.ImportFromDeckbox.AboutBox.LoadVersionInformation">
+            <summary>
+            Loads the version information.
+            </summary>
+        </member>
         <member name="M:OCTGN.ImportFromDeckbox.AboutBox.InitializeComponent">
             <summary>
             InitializeComponent
@@ -239,6 +244,11 @@
             4. The found cards will be displayed in the list below on the right side..
              </summary>
         </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.ForumDeckSummary">
+            <summary>
+              Looks up a localized string similar to [b]Deck summary: [/b].
+            </summary>
+        </member>
         <member name="P:OCTGN.ImportFromDeckbox.Localization.GroupBoxHeaderDeckbox">
             <summary>
               Looks up a localized string similar to Paste Deckbox Deck List.
@@ -257,6 +267,11 @@
         <member name="P:OCTGN.ImportFromDeckbox.Localization.MatchedCards">
             <summary>
               Looks up a localized string similar to Matched Cards:.
+            </summary>
+        </member>
+        <member name="P:OCTGN.ImportFromDeckbox.Localization.MatchedCardSummary">
+            <summary>
+              Looks up a localized string similar to {0} Cards ({1} Distinct).
             </summary>
         </member>
         <member name="P:OCTGN.ImportFromDeckbox.Localization.ParsedCards">
@@ -592,6 +607,31 @@
             The card type.
             </value>
         </member>
+        <member name="T:OCTGN.ImportFromDeckbox.OCTGN.CardModelExtension">
+            <summary>
+            Extends the <see cref="T:Octgn.Data.CardModel"/> class.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.CardModelExtension.GetCardType(Octgn.Data.CardModel)">
+            <summary>
+            Gets the type of the card.
+            </summary>
+            <param name="instanceToExtend">The instance to extend.</param>
+            <returns>
+            The card type as string or <see cref="F:System.String.Empty"/> when the 
+            type cannot be determined.
+            </returns>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.CardModelExtension.HasCardType(Octgn.Data.CardModel,System.String)">
+            <summary>
+            Determines whether the has card has the specified typeor not.
+            </summary>
+            <param name="instanceToExtend">The instance to extend.</param>
+            <param name="cardTypeToLookup">The card type to lookup.</param>
+            <returns>
+              <c>true</c> if the card has the specified type; otherwise, <c>false</c>.
+            </returns>
+        </member>
         <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ExtractCards">
             <summary>
             Extracts cards from the regex matched cards for the new deck.
@@ -622,6 +662,15 @@
             <param name="instanceToExtend">The instance to extend.</param>
             <returns>
               <c>true</c> if the given game is warhammer invasion; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.OCTGN.GameExtension.IsMagic(Octgn.Data.Game)">
+            <summary>
+            Determines whether the given game is magic.
+            </summary>
+            <param name="instanceToExtend">The instance to extend.</param>
+            <returns>
+              <c>true</c> if the given game is magic; otherwise, <c>false</c>.
             </returns>
         </member>
         <member name="T:OCTGN.ImportFromDeckbox.OCTGN.ParseCards">
@@ -676,6 +725,43 @@
                (?: [\r\n]* )
             )+.
              </summary>
+        </member>
+        <member name="T:OCTGN.ImportFromDeckbox.Util.EmbeddedResourceHelper">
+            <summary>
+            Helper class to work with embedded resources.
+            </summary>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.Util.EmbeddedResourceHelper.ReadEmbeddedResourceString(System.String,System.Reflection.Assembly)">
+            <summary>
+            Reads the embedded resource string.
+            </summary>
+            <param name="resourceName">
+            Name of the resource.
+            <para>
+            You don't need to fully qualify the resource name; This method will look up all available resource
+            strings and tries to find a match using the <see cref="M:System.String.EndsWith(System.String,System.StringComparison)"/>
+            method.
+            </para>
+            <para>
+            This means, that you can call this method just with the file name of the embedded resource.
+            </para>
+            </param>
+            <param name="assembly">The assembly which contains the embedded resource.</param>
+            <returns>The embedded resource as string.</returns>
+            <exception cref="T:System.InvalidOperationException">
+             This exception will be thrown when the resource could not be found.
+            </exception>
+        </member>
+        <member name="M:OCTGN.ImportFromDeckbox.Util.EmbeddedResourceHelper.ReadEmbeddedResourceXDocument(System.String,System.Reflection.Assembly)">
+            <summary>
+            Reads the embedded resource XDocument.
+            </summary>
+            <param name="resourceName">Name of the resource.</param>
+            <param name="assembly">The assembly which contains the embedded resource.</param>
+            <returns>The embedded resource as string.</returns>
+            <exception cref="T:System.InvalidOperationException">
+             This exception will be thrown when the resource could not be found.
+            </exception>
         </member>
         <member name="T:OCTGN.ImportFromDeckbox.VersionDetails">
             <summary>
