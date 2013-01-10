@@ -11,7 +11,8 @@
     <AssemblyName>OCTGN.ImportFromDeckbox</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -33,6 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\OCTGN.ImportFromDeckbox.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Signing.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Octgn.Data, Version=3.0.1.27, Culture=neutral, processorArchitecture=MSIL">
@@ -121,6 +128,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Signing.snk" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="molumen_red_round_error_warning_icon.png" />
@@ -132,8 +140,14 @@
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo "Copy files to plugin folder..."
-@mkdir "C:\Users\michael\Documents\OCTGN\Plugins\ImportFromDeckBox.org"
-xcopy "OCTGN.ImportFromDeckbox.dll" "C:\Users\michael\Documents\OCTGN\Plugins\ImportFromDeckBox.org" /y /q /c
+rem @mkdir "C:\Users\michael\Documents\OCTGN\Plugins\ImportFromDeckBox.org"
+rem @xcopy "OCTGN.ImportFromDeckbox.dll" "C:\Users\michael\Documents\OCTGN\Plugins\ImportFromDeckBox.org" /y /q /c
+
+
+@mkdir "C:\Users\michael.wagner\Documents\Octgn\Plugins\ImportFromDeckBox.org"
+@xcopy "OCTGN.ImportFromDeckbox.dll" "C:\Users\michael.wagner\Documents\Octgn\Plugins\ImportFromDeckBox.org" /y /q /c
+
+
 
 </PostBuildEvent>
   </PropertyGroup>

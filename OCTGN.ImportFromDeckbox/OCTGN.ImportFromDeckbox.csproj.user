@@ -5,9 +5,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Users\michael\Documents\OCTGN\OCTGN\OCTGN.exe</StartProgram>
+    <StartProgram>C:\Users\michael.wagner\Documents\Octgn\OCTGN\OCTGN.exe</StartProgram>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\michael.wagner\Documents\Octgn\OCTGN\OCTGN.exe</StartProgram>
   </PropertyGroup>
 </Project>

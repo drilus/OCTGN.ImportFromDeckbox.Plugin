@@ -1,8 +1,5 @@
-﻿using Octgn.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
+using Octgn.Data;
 
 namespace OCTGN.ImportFromDeckbox.OCTGN
 {
@@ -16,12 +13,12 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
         /// </summary>
         /// <param name="instanceToExtend">The instance to extend.</param>
         /// <returns>
-        /// The card type as string or <see cref="string.Empty"/> when the 
+        /// The card type as string or <see cref="string.Empty"/> when the
         /// type cannot be determined.
         /// </returns>
         public static string GetCardType(this CardModel instanceToExtend)
         {
-            var found= instanceToExtend.Properties.Where(p => p.Key.Equals("Type")).FirstOrDefault();
+            var found = instanceToExtend.Properties.Where(p => p.Key.Equals("Type")).FirstOrDefault();
             if (!string.IsNullOrEmpty(found.Key))
             {
                 return found.Value.ToString();

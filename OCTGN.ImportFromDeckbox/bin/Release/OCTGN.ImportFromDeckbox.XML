@@ -618,7 +618,7 @@
             </summary>
             <param name="instanceToExtend">The instance to extend.</param>
             <returns>
-            The card type as string or <see cref="F:System.String.Empty"/> when the 
+            The card type as string or <see cref="F:System.String.Empty"/> when the
             type cannot be determined.
             </returns>
         </member>

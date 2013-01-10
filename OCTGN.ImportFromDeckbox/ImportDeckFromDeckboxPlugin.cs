@@ -2,12 +2,12 @@
 
 namespace OCTGN.ImportFromDeckbox
 {
-    using Octgn.Data;
-    using Octgn.Library.Plugin;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
+    using Octgn.Data;
+    using Octgn.Library.Plugin;
 
     /// <summary>
     /// The import from Deckbox.org plugin
@@ -115,8 +115,6 @@ namespace OCTGN.ImportFromDeckbox
                 MessageBox.Show("No Games Installed?!?!?");
                 return;
             }
-
-            // TODO: Select game in GUI
 
             // Before we make a deck, we need to make sure we load the correct game for the deck.
             pluginController.SetLoadedGame(game);

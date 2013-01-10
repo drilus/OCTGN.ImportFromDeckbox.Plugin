@@ -386,6 +386,11 @@ namespace OCTGN.ImportFromDeckbox
             {
                 ErrorDetails = error.Message;
                 ErrorHint = Localization.ErrorHintParseError;
+
+                if (error.Data.Contains("Cards"))
+                {
+                    MatchedCards = (IEnumerable<Deck.Element>)error.Data["Cards"];
+                }
             }
             finally
             {
@@ -396,7 +401,7 @@ namespace OCTGN.ImportFromDeckbox
                 FirePropertyChanged("ErrorDetails");
                 FirePropertyChanged("MatchedCardSummary");
                 FirePropertyChanged("MatchedCards");
-           }
+            }
         }
 
         /// <summary>

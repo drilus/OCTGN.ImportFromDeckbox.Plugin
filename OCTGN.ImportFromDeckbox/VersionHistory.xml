@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <History>
+  <Version Number="1.0.0.2">Do not abort detecting cards on parse errors any longer..</Version>
   <Version Number="1.0.0.1">Deck list now automatically sorted by type.</Version>
   <Version Number="1.0.0.0">Initial release.</Version>
 </History>

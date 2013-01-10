@@ -42,8 +42,8 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
                     errorCards.AppendLine(parsedCard.Name);
                 }
                 else
-                {                    
-                    var card = cardModels.Where(c => c.Id.ToString().Equals(found.Id)).FirstOrDefault();
+                {
+                    var card = cardModels.FirstOrDefault(c => c.Id.ToString().Equals(found.Id));
                     result.Add(new Deck.Element()
                     {
                         Card = card,
@@ -54,7 +54,10 @@ namespace OCTGN.ImportFromDeckbox.OCTGN
 
             if (!string.IsNullOrEmpty(errorCards.ToString()))
             {
-                throw new InvalidOperationException(Localization.ErrorCannotFindCards + Environment.NewLine + errorCards.ToString());
+                var details = new InvalidOperationException(Localization.ErrorCannotFindCards + Environment.NewLine + errorCards.ToString());
+                details.Data.Add("Cards", result);
+
+                throw details;
             }
 
             return result;
